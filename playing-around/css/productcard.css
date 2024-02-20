@@ -1,0 +1,9 @@
+.single-product {
+    background-color: red;
+    padding: 1rem;
+    width: 300px;
+}
+
+.product-image {
+    width: 300px;
+}
