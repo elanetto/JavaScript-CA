@@ -10,8 +10,14 @@ const productTitle = urlParams.get('title');
 const productImage = urlParams.get('image');
 const productPrice = urlParams.get('price'); 
 
+const products = fetch('https://api.noroff.dev/api/v1/gamehub/ded6041a-622f-4fb4-81e4-96fcfdad4dff');
+
+console.log("The products: " + products);
+
 // testing with game number 1 with the id: ded6041a-622f-4fb4-81e4-96fcfdad4dff
 // By the way; WTF is up with these ID numbers? It is a small API, and only numbers would be good.
+
+
 
 function getProducts() {
     fetch('https://api.noroff.dev/api/v1/gamehub/ded6041a-622f-4fb4-81e4-96fcfdad4dff')
