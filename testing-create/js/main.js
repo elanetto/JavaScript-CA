@@ -25,9 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 const productPrice = document.createElement('p');
                 productPrice.textContent = `$${product.price}`;
 
+                const productLike = document.createElement('span');
+                productLike.innerHTML = `<i class="fa-solid fa-heart"></i>`;
+
                 productCard.appendChild(productImage);
                 productCard.appendChild(productName);
                 productCard.appendChild(productPrice);
+                productCard.appendChild(productLike);
                 
                 productList.appendChild(productCard);
             });
