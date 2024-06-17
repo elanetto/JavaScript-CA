@@ -83,6 +83,16 @@ main {
     margin-bottom: 1rem;
 }
 
+.product span {
+    color: var(--dark);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product span:hover {
+    color: #FD5A27;
+}
+
 
 
 
