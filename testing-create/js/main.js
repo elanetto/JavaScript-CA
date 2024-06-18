@@ -21,17 +21,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const productName = document.createElement('h2');
                 productName.textContent = product.title;
+                productName.classList.add('product-name');
 
                 const productPrice = document.createElement('p');
                 productPrice.textContent = `$${product.price}`;
 
+                const lowerProductCard = document.createElement('div');
+                lowerProductCard.classList.add('card-buttons')
+
+                const buyNowButton = document.createElement('button');
+                buyNowButton.textContent = `Buy now`;
+                buyNowButton.classList.add('buy-now-button');
+
                 const productLike = document.createElement('span');
                 productLike.innerHTML = `<i class="fa-solid fa-heart"></i>`;
+                productLike.classList.add('like-button');
 
                 productCard.appendChild(productImage);
                 productCard.appendChild(productName);
                 productCard.appendChild(productPrice);
-                productCard.appendChild(productLike);
+
+                productCard.appendChild(lowerProductCard);
+
+                lowerProductCard.appendChild(buyNowButton);
+                lowerProductCard.appendChild(productLike);
                 
                 productList.appendChild(productCard);
             });
