@@ -96,7 +96,11 @@ main {
 }
 
 .like-button:hover {
-    color: #FD5A27;
+    color: var(--yellow);
+}
+
+.like-button:active {
+    color: var(--orange);
 }
 
 .card-buttons {
